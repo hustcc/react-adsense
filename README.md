@@ -10,6 +10,11 @@
 
 > **npm install react-adsence**
 
+Before use Google AdSence, you should add the `script` at the end of HTML.
+
+```html
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+```
 
 # 2. Usage
 
