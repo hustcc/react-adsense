@@ -3,7 +3,7 @@
 
 > react-adsence is a React-component for Google AdSence / Baidu advertisement.
 
-[![Build Status](https://travis-ci.org/hustcc/react-adsence.svg?branch=master)](https://travis-ci.org/hustcc/react-adsence) [![npm](https://img.shields.io/npm/v/react-adsence.svg?style=flat-square)](https://www.npmjs.com/package/react-adsence) [![npm](https://img.shields.io/npm/dt/react-adsence.svg?style=flat-square)](https://www.npmjs.com/package/react-adsence) [![npm](https://img.shields.io/npm/l/react-adsence.svg?style=flat-square)](https://www.npmjs.com/package/react-adsence)
+[![Build Status](https://travis-ci.org/hustcc/react-adsence.svg?branch=master)](https://travis-ci.org/hustcc/react-adsence) [![npm](https://img.shields.io/npm/v/react-adsence.svg?style=flat-square)](https://www.npmjs.com/package/react-adsence) [![npm](https://img.shields.io/npm/dt/react-adsence.svg?style=flat-square)](https://www.npmjs.com/package/react-adsence) [![npm](https://img.shields.io/npm/l/react-adsence.svg?style=flat-square)](https://www.npmjs.com/package/react-adsence) [![demo](https://img.shields.io/badge/Live Demo-Click Here-ff69b4.svg)](http://git.hust.cc/react-adsence/)
 
 
 # 1. Install
