@@ -1,16 +1,16 @@
-# react-adsence
+# react-adsense
 
 
-> react-adsence is a React-component for Google AdSence / Baidu advertisement.
+> react-adsense is a React-component for Google AdSense / Baidu advertisement.
 
-[![Build Status](https://travis-ci.org/hustcc/react-adsence.svg?branch=master)](https://travis-ci.org/hustcc/react-adsence) [![npm](https://img.shields.io/npm/v/react-adsence.svg?style=flat-square)](https://www.npmjs.com/package/react-adsence) [![npm](https://img.shields.io/npm/dt/react-adsence.svg?style=flat-square)](https://www.npmjs.com/package/react-adsence) [![npm](https://img.shields.io/npm/l/react-adsence.svg?style=flat-square)](https://www.npmjs.com/package/react-adsence) [![demo](https://img.shields.io/badge/Live Demo-Click Here-ff69b4.svg)](http://git.hust.cc/react-adsence/)
+[![Build Status](https://travis-ci.org/hustcc/react-adsense.svg?branch=master)](https://travis-ci.org/hustcc/react-adsense) [![npm](https://img.shields.io/npm/v/react-adsense.svg?style=flat-square)](https://www.npmjs.com/package/react-adsense) [![npm](https://img.shields.io/npm/dt/react-adsense.svg?style=flat-square)](https://www.npmjs.com/package/react-adsense) [![npm](https://img.shields.io/npm/l/react-adsense.svg?style=flat-square)](https://www.npmjs.com/package/react-adsense) [![demo](https://img.shields.io/badge/Live Demo-Click Here-ff69b4.svg)](http://git.hust.cc/react-adsense/)
 
 
 # 1. Install
 
-> **npm install react-adsence**
+> **npm install react-adsense**
 
-Before use Google AdSence, you should add the `script` at the end of HTML.
+Before use Google AdSense, you should add the `script` at the end of HTML.
 
 ```html
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -20,14 +20,14 @@ Before use Google AdSence, you should add the `script` at the end of HTML.
 
 ```js
 import React from 'react';
-import AdSence from 'react-adsence';
+import AdSense from 'react-adsense';
 
-<AdSence.Google client='ca-pub-7292810486004926'
+<AdSense.Google client='ca-pub-7292810486004926'
                 slot='7806394673' />
 
 // or
 
-<AdSence.Google client='ca-pub-7292810486004926'
+<AdSense.Google client='ca-pub-7292810486004926'
                 slot='7806394673'
                 style={{width: 500, height: 300, float: 'left'}}
                 format='' />
@@ -37,7 +37,7 @@ import AdSence from 'react-adsence';
 # 3. TODO
 
  - `Baidu` advertisement supported.
- - `Google` sync adsence supported.
+ - `Google` sync adsense supported.
 
 
 # 4. LICENSE

@@ -1,36 +1,36 @@
 {
-  "name": "react-adsence",
+  "name": "react-adsense",
   "version": "0.0.1",
-  "description": "A Simple React component for Google AdSence and Baidu advertisement.",
+  "description": "A Simple React component for Google AdSense and Baidu advertisement.",
   "main": "lib/index.js",
   "scripts": {
     "lint": "eslint src",
     "clean": "rimraf lib",
     "test": "npm run lint",
-    "build": "npm run clean && cross-env NODE_ENV=production babel src -d lib",
+    "build": "npm run clean && cross-env NODE_ENV=production babel src -d lib && npm run build-demos",
     "build-demos": "webpack",
     "prepublish": "npm run build"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/hustcc/react-adsence.git"
+    "url": "https://github.com/hustcc/react-adsense.git"
   },
   "keywords": [
-    "React",
-    "Component",
-    "React-component",
-    "AdSence",
-    "Google AD",
-    "Google",
-    "BaiDu",
-    "Advertisement"
+    "react",
+    "component",
+    "react-component",
+    "adsense",
+    "google ad",
+    "google adsense",
+    "baidu",
+    "advertisement"
   ],
   "author": "hustcc (http://github.com/hustcc)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/hustcc/react-adsence/issues"
+    "url": "https://github.com/hustcc/react-adsense/issues"
   },
-  "homepage": "https://github.com/hustcc/react-adsence",
+  "homepage": "https://github.com/hustcc/react-adsense",
   "devDependencies": {
     "babel-cli": "^6.6.0",
     "babel-core": "^6.3.15",
@@ -50,10 +50,7 @@
     "style-loader": "~0.12.3",
     "file-loader": "~0.8.4",
     "rimraf": "^2.5.0",
-    "cross-env": "^1.0.8",
-    "react-router": "^2.0.0",
-    "babel-plugin-transform-es3-property-literals": "*",
-    "babel-plugin-transform-es3-member-expression-literals": "*"
+    "cross-env": "^1.0.8"
   },
   "dependencies": {
   },

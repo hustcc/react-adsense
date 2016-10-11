@@ -1,8 +1,8 @@
 import Google from './google';
 import Baidu from './baidu';
 
-let AdSence = {};
-AdSence.Google = Google;
-AdSence.Baidu = Baidu;
+let AdSense = {};
+AdSense.Google = Google;
+AdSense.Baidu = Baidu;
 
-export default AdSence;
+export default AdSense;
