@@ -3,7 +3,7 @@
 
 > react-adsense is a React-component for Google AdSense / Baidu advertisement.
 
-[![Build Status](https://travis-ci.org/hustcc/react-adsense.svg?branch=master)](https://travis-ci.org/hustcc/react-adsense) [![npm](https://img.shields.io/npm/v/react-adsense.svg?style=flat-square)](https://www.npmjs.com/package/react-adsense) [![npm](https://img.shields.io/npm/dt/react-adsense.svg?style=flat-square)](https://www.npmjs.com/package/react-adsense) [![npm](https://img.shields.io/npm/l/react-adsense.svg?style=flat-square)](https://www.npmjs.com/package/react-adsense) [![demo](https://img.shields.io/badge/Live Demo-Click Here-ff69b4.svg)](http://git.hust.cc/react-adsense/)
+[![Build Status](https://travis-ci.org/hustcc/react-adsense.svg?branch=master)](https://travis-ci.org/hustcc/react-adsense) [![npm](https://img.shields.io/npm/v/react-adsense.svg?style=flat-square)](https://www.npmjs.com/package/react-adsense) [![npm](https://img.shields.io/npm/dt/react-adsense.svg?style=flat-square)](https://www.npmjs.com/package/react-adsense) [![npm](https://img.shields.io/npm/l/react-adsense.svg?style=flat-square)](https://www.npmjs.com/package/react-adsense) [![demo](https://img.shields.io/badge/LiveDemo-ClickHere-ff69b4.svg)](http://git.hust.cc/react-adsense/)
 
 
 # 1. Install
