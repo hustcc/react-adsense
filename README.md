@@ -8,7 +8,7 @@
 
 # 1. Install
 
-> **npm install react-adsense**
+> **npm install --save react-adsense**
 
 Before use Google AdSense, you should add the `script` at the end of HTML.
 
