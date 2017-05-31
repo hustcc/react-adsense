@@ -1,11 +1,9 @@
 import React from 'react';
 
-const Baidu = React.createClass({
-  render: function() {
+export default class Baidu extends React.Component {
+  render() {
     return (
-      <p> TODO !</p>
+      <div className="adsbybaidu">TODO</div>
     );
-  },
-});
-
-module.exports = Baidu;
+  }
+};

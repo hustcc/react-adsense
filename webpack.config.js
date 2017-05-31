@@ -1,10 +1,12 @@
 var webpack = require('webpack');
+var path = require('path');
 var uglifyJsPlugin = new webpack.optimize.UglifyJsPlugin({compress: {warnings: false}});
 
 module.exports = {
   entry: './demo/index.jsx',
   output: {
-    path: './demo/dist/', filename: 'bundle.js'
+    filename: 'bundle.js',
+    path: path.resolve(__dirname, 'demo/dist'),
   },
   module: {
     loaders:[{

@@ -1,25 +1,12 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-const Google = React.createClass({
-  propTypes: {
-    style: React.PropTypes.object,
-    client: React.PropTypes.string.isRequired,
-    slot: React.PropTypes.string.isRequired,
-    format: React.PropTypes.string
-  },
-
-  componentDidMount: function() {
+export default class Google extends React.Component {
+  componentDidMount() {
     if(window) (window.adsbygoogle = window.adsbygoogle || []).push({});
-  },
+  };
 
-  getDefaultProps: function() {
-    return {
-      style: {display: 'block'}, 
-      format: 'auto'
-    };
-  },
-
-  render: function() {
+  render() {
     return (
       <ins className="adsbygoogle" 
         style={this.props.style} 
@@ -28,6 +15,16 @@ const Google = React.createClass({
         data-ad-format={this.props.format}></ins>
     );
   }
-});
+};
 
-module.exports = Google;
+Google.propTypes = {
+  style: React.PropTypes.object, // eslint-disable-line
+  client: React.PropTypes.string.isRequired,
+  slot: React.PropTypes.string.isRequired,
+  format: React.PropTypes.string,
+};
+
+Google.defaultProps = {
+  style: {display: 'block'}, 
+  format: 'auto',
+};
