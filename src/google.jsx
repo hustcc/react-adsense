@@ -18,10 +18,10 @@ export default class Google extends React.Component {
 };
 
 Google.propTypes = {
-  style: React.PropTypes.object, // eslint-disable-line
-  client: React.PropTypes.string.isRequired,
-  slot: React.PropTypes.string.isRequired,
-  format: React.PropTypes.string,
+  style: PropTypes.object, // eslint-disable-line
+  client: PropTypes.string.isRequired,
+  slot: PropTypes.string.isRequired,
+  format: PropTypes.string,
 };
 
 Google.defaultProps = {
