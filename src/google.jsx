@@ -8,7 +8,7 @@ export default class Google extends React.Component {
 
   render() {
     return (
-      <ins className="adsbygoogle" 
+      <ins className={`${this.props.className} adsbygoogle`}
         style={this.props.style} 
         data-ad-client={this.props.client} 
         data-ad-slot={this.props.slot} 
@@ -18,6 +18,7 @@ export default class Google extends React.Component {
 };
 
 Google.propTypes = {
+  className: PropTypes.string,
   style: PropTypes.object, // eslint-disable-line
   client: PropTypes.string.isRequired,
   slot: PropTypes.string.isRequired,
@@ -25,6 +26,7 @@ Google.propTypes = {
 };
 
 Google.defaultProps = {
+  className: '',
   style: {display: 'block'}, 
   format: 'auto',
 };
