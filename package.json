@@ -1,6 +1,6 @@
 {
   "name": "react-adsense",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A Simple React component for Google AdSense and Baidu advertisement.",
   "main": "lib/index.js",
   "scripts": {
@@ -49,7 +49,7 @@
     "prop-types": "^15.5.10",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
-    "rimraf": "^2.6.1",
+    "rimraf": "^2.6.2",
     "style-loader": "^0.18.1",
     "webpack": "^2.6.1"
   },
