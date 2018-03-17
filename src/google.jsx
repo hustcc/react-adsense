@@ -23,7 +23,7 @@ Google.propTypes = {
   style: PropTypes.object, // eslint-disable-line
   client: PropTypes.string.isRequired,
   slot: PropTypes.string.isRequired,
-  layout: PropTypes.string.isRequired,
+  layout: PropTypes.string,
   format: PropTypes.string,
 };
 
@@ -31,4 +31,5 @@ Google.defaultProps = {
   className: '',
   style: {display: 'block'}, 
   format: 'auto',
+  layout: ''
 };
