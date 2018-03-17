@@ -18,23 +18,36 @@ const MainComponent = React.createClass({
         </pre>
 
         <h2> 2. Usage </h2>
-        <pre>{"import AdSense from 'react-adsense';\n\n<AdSense.Google client='ca-pub-7292810486004926'\n\t\tslot='7806394673' />"}
+        <pre>{"import AdSense from 'react-adsense';\n\n<AdSense.Google\n\tclient='ca-pub-7292810486004926'\n\tslot='7806394673'\n/>"}
 
         </pre>
 
-        <h2> 3. Demo default </h2>
+        <h2> 3. default props </h2>
         <AdSense.Google client='ca-pub-7292810486004926'
                         slot='7806394673' />
 
-        <h2> 4. full-config Demo </h2>
-        <AdSense.Google client='ca-pub-7292810486004926'
-                        slot='7806394673'
-                        style={{width: 500, height: 300, float: 'left'}}
-                        format='' />
-        <AdSense.Google client='ca-pub-7292810486004926'
-                        slot='7806394673'
-                        style={{width: 500, height: 300, float: 'left'}}
-                        format='' />
+        <h2> 4. in-article layout </h2>
+        <AdSense.Google
+            client='ca-pub-7292810486004926'
+            slot='7806394673'
+            layout='in-article'
+        />
+
+        <h2> 5. full-config Demo </h2>
+        <AdSense.Google
+            client='ca-pub-7292810486004926'
+            slot='7806394673'
+            style={{width: 500, height: 300, float: 'left'}}
+            layout='in-article'
+            format=''
+        />
+        <AdSense.Google
+            client='ca-pub-7292810486004926'
+            slot='7806394673'
+            style={{width: 500, height: 300, float: 'left'}}
+            layout='in-article'
+            format=''
+        />
       </div>
     );
   }

@@ -1,6 +1,6 @@
 {
   "name": "react-adsense",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "A Simple React component for Google AdSense and Baidu advertisement.",
   "main": "lib/index.js",
   "scripts": {
@@ -8,8 +8,7 @@
     "clean": "rimraf lib",
     "test": "npm run lint",
     "build": "npm run clean && cross-env NODE_ENV=production babel src -d lib && npm run build-demos",
-    "build-demos": "webpack",
-    "prepublish": "npm run build"
+    "build-demos": "webpack"
   },
   "repository": {
     "type": "git",
@@ -20,7 +19,7 @@
     "component",
     "react-component",
     "adsense",
-    "google ad",
+    "google adsense",
     "google adsense",
     "baidu",
     "advertisement"
@@ -55,7 +54,7 @@
   },
   "dependencies": {},
   "peerDependencies": {
-    "react": ">=0.13.2 || ^0.14 || ^15.0.0 || >=16.0.0-alpha.1 <17.0.0",
+    "react": ">=0.13.2 || ^0.14 || ^15.0.0 || ^16.0.0",
     "prop-types": ">=15.0.0"
   }
 }
