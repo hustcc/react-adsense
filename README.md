@@ -48,6 +48,15 @@ import AdSense from 'react-adsense';
   layout='in-article'
   format='fluid'
 />
+
+// auto full width responsive ads
+<AdSense.Google
+  client='ca-pub-7292810486004926'
+  slot='7806394673'
+  style={{ display: 'block' }}
+  format='auto'
+  responsive='true'
+/>
 ```
 
 
@@ -61,6 +70,7 @@ import AdSense from 'react-adsense';
    - `style`:
    - `layout`:
    - `format`:
+   - `responsive`:
 
 
 # 4. TODO
