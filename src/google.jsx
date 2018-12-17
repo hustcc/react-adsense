@@ -9,10 +9,11 @@ export default class Google extends React.Component {
   render() {
     return (
       <ins className={`${this.props.className} adsbygoogle`}
-        style={this.props.style} 
-        data-ad-client={this.props.client} 
+        style={this.props.style}
+        data-ad-client={this.props.client}
         data-ad-slot={this.props.slot}
         data-ad-layout={this.props.layout}
+        data-ad-layout-key={this.props.layoutKey}
         data-ad-format={this.props.format}
         data-full-width-responsive={this.props.responsive}></ins>
     );
@@ -25,14 +26,16 @@ Google.propTypes = {
   client: PropTypes.string.isRequired,
   slot: PropTypes.string.isRequired,
   layout: PropTypes.string,
+  layoutKey: PropTypes.string,
   format: PropTypes.string,
   responsive: PropTypes.string
 };
 
 Google.defaultProps = {
   className: '',
-  style: {display: 'block'}, 
+  style: {display: 'block'},
   format: 'auto',
   layout: '',
+  layoutKey: '',
   responsive: 'false'
 };
