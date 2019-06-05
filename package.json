@@ -1,6 +1,6 @@
 {
   "name": "react-adsense",
-  "version": "0.0.6",
+  "version": "0.1.0",
   "description": "A Simple React component for Google AdSense and Baidu advertisement.",
   "main": "lib/index.js",
   "scripts": {
