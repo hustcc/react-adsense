@@ -15,7 +15,8 @@ export default class Google extends React.Component {
         data-ad-layout={this.props.layout}
         data-ad-layout-key={this.props.layoutKey}
         data-ad-format={this.props.format}
-        data-full-width-responsive={this.props.responsive}></ins>
+        data-full-width-responsive={this.props.responsive}
+        enable_page_level_ads={this.props.pageLevelAds}></ins>
     );
   }
 };
@@ -28,7 +29,8 @@ Google.propTypes = {
   layout: PropTypes.string,
   layoutKey: PropTypes.string,
   format: PropTypes.string,
-  responsive: PropTypes.string
+  responsive: PropTypes.string,
+  pageLevelAds: PropTypes.string,
 };
 
 Google.defaultProps = {
@@ -37,5 +39,6 @@ Google.defaultProps = {
   format: 'auto',
   layout: '',
   layoutKey: '',
-  responsive: 'false'
+  responsive: 'false',
+  pageLevelAds: 'false',
 };
