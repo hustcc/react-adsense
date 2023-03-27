@@ -60,8 +60,8 @@ npm install --save react-adsense
 If you only have one ad slot, use `<AdSense/>` component. `client` and `slot` are required.
 
 ```jsx
-import React from "react";
-import { AdSense } from "react-adsense";
+import React from 'react';
+import { AdSense } from 'react-adsense';
 
 <AdSense client="ca-pub-7292810486004926" slot="7806394673" />;
 ```
@@ -102,8 +102,8 @@ You can also customize it:
 If you have many ad slots, you can use `<AdSenseProvider/>` to define global parameters.
 
 ```jsx
-import React from "react";
-import { AdSense, AdSenseProvider } from "react-adsense";
+import React from 'react';
+import { AdSense, AdSenseProvider } from 'react-adsense';
 
 <AdSenseProvider client="ca-pub-7292810486004926">
   <AdSense slot="7806394673" />

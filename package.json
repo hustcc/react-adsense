@@ -12,6 +12,7 @@
     "README.md"
   ],
   "scripts": {
+    "start": "vite --config vite-demo.config.ts --open",
     "lint": "eslint src",
     "build": "vite build"
   },

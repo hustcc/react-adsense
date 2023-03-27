@@ -1,5 +1,5 @@
-import { ReactNode } from "react";
-import { AdSenseContext, AdSenseContextValue } from "./AdSenseContext";
+import { ReactNode } from 'react';
+import { AdSenseContext, AdSenseContextValue } from './AdSenseContext';
 
 export interface AdSenseProviderProps extends AdSenseContextValue {
   children?: ReactNode;

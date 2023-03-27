@@ -1,2 +1,2 @@
-export * from "./AdSenseProvider";
-export * from "./AdSense";
+export * from './AdSenseProvider';
+export * from './AdSense';

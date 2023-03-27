@@ -4,3 +4,4 @@ npm-debug.*
 .idea
 pnpm-lock.yaml
 dist
+build

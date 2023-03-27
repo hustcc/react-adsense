@@ -1,5 +1,5 @@
-import { CSSProperties, useContext, useEffect } from "react";
-import { AdSenseContext } from "./AdSenseContext";
+import { CSSProperties, useContext, useEffect } from 'react';
+import { AdSenseContext } from './AdSenseContext';
 
 export interface AdSenseProps {
   className?: string;
@@ -13,14 +13,14 @@ export interface AdSenseProps {
 }
 
 export function AdSense({
-  className,
+  className = '',
   style,
   client,
   slot,
   layout,
   layoutKey,
-  format = "auto",
-  responsive = "false",
+  format = 'auto',
+  responsive = 'false',
 }: AdSenseProps) {
   const context = useContext(AdSenseContext);
 
@@ -35,7 +35,7 @@ export function AdSense({
     <ins
       className={`${className} adsbygoogle`}
       style={{
-        display: "block",
+        display: 'block',
         ...style,
       }}
       data-ad-client={client || context.client}
