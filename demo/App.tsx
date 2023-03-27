@@ -1,6 +1,7 @@
 import { AdSense } from '../src';
 
 export default function App() {
+  console.log('haha');
   return (
     <div>
       <h1> react-adsense: adsense for react </h1>
