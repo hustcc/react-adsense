@@ -1,6 +1,6 @@
 # react-adsense
 
-React component for Google AdSense.
+React components for Google AdSense.
 
 [![Build Status](https://travis-ci.org/hustcc/react-adsense.svg?branch=master)](https://travis-ci.org/hustcc/react-adsense)
 [![npm](https://img.shields.io/npm/v/react-adsense.svg)](https://www.npmjs.com/package/react-adsense)
