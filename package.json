@@ -5,6 +5,11 @@
   "main": "dist/react-adsense.js",
   "module": "dist/react-adsense.mjs",
   "typings": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md"
+  ],
   "scripts": {
     "lint": "eslint src",
     "build": "vite build"
