@@ -1,6 +1,6 @@
 # react-adsense
 
-> react-adsense is a React-component for Google AdSense / Baidu advertisement.
+React component for Google AdSense.
 
 [![Build Status](https://travis-ci.org/hustcc/react-adsense.svg?branch=master)](https://travis-ci.org/hustcc/react-adsense)
 [![npm](https://img.shields.io/npm/v/react-adsense.svg)](https://www.npmjs.com/package/react-adsense)
@@ -8,32 +8,69 @@
 [![npm](https://img.shields.io/npm/l/react-adsense.svg)](https://www.npmjs.com/package/react-adsense)
 [![demo](https://img.shields.io/badge/LiveDemo-ClickHere-ff69b4.svg)](http://git.hust.cc/react-adsense/)
 
+## Prepare
 
-# 1. Install
-
-> **npm install --save react-adsense**
-
-Before use Google AdSense, you should add the `script` at the end of HTML.
+First you need to open a Google AdSense account. You should get a script:
 
 ```html
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script
+  async
+  src="https://pagead2syndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7292810486004926"
+  crossorigin="anonymous"
+></script>
 ```
 
+Add it to your website's home page. Usually Google verify your website in two weeks. After the process is done, you will be able to create custom ad blocks.
 
-# 2. Usage
+> **Note: Turn Off AdBlocker Before Continue!!!**
+
+After creating an ad block, you should have a code snippet:
+
+```html
+<script
+  async
+  src="https://pagead2syndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7099046271205844"
+  crossorigin="anonymous"
+></script>
+<ins
+  class="adsbygoogle"
+  style="display:block"
+  data-ad-format="fluid"
+  data-ad-layout-key="-fb+5w+4e-db+86"
+  data-ad-client="ca-pub-7099046271205844"
+  data-ad-slot="5725216730"
+></ins>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+```
+
+We need `data-ad-*` attributes to use with react-adsense.
+
+## Install
+
+```bash
+npm install --save react-adsense
+```
+
+## Usage
+
+### Single Slot
+
+If you only have one ad slot, use `<AdSense/>` component. `client` and `slot` are required.
 
 ```jsx
-import React from 'react';
-import AdSense from 'react-adsense';
+import React from "react";
+import { AdSense } from "react-adsense";
 
-// ads with no set-up
-<AdSense.Google
-  client='ca-pub-7292810486004926'
-  slot='7806394673'
-/>
+<AdSense client="ca-pub-7292810486004926" slot="7806394673" />;
+```
 
+You can also customize it:
+
+```jsx
 // ads with custom format
-<AdSense.Google
+<AdSense
   client='ca-pub-7292810486004926'
   slot='7806394673'
   style={{ width: 500, height: 300, float: 'left' }}
@@ -41,7 +78,7 @@ import AdSense from 'react-adsense';
 />
 
 // responsive and native ads
-<AdSense.Google
+<AdSense
   client='ca-pub-7292810486004926'
   slot='7806394673'
   style={{ display: 'block' }}
@@ -50,7 +87,7 @@ import AdSense from 'react-adsense';
 />
 
 // auto full width responsive ads
-<AdSense.Google
+<AdSense
   client='ca-pub-7292810486004926'
   slot='7806394673'
   style={{ display: 'block' }}
@@ -60,25 +97,54 @@ import AdSense from 'react-adsense';
 />
 ```
 
+### Multiple Slots
 
-# 3. Props
+If you have many ad slots, you can use `<AdSenseProvider/>` to define global parameters.
 
- - Required props:
-   - `client`
-   - `slot`
- - Optional props:
-   - `className`:
-   - `style`:
-   - `layout`:
-   - `layoutKey`:
-   - `format`:
-   - `responsive`:
+```jsx
+import React from "react";
+import { AdSense, AdSenseProvider } from "react-adsense";
 
+<AdSenseProvider client="ca-pub-7292810486004926">
+  <AdSense slot="7806394673" />
+  <AdSense slot="7234149532" />
+  <AdSense slot="7294291011" />
+</AdSenseProvider>;
+```
 
-# 4. TODO
+## Props
 
- - `Baidu` advertisement supported.
+### `client`
 
+Related to `data-ad-client`. Required.
+
+### `slot`
+
+Related to `data-ad-slot`. Required.
+
+### `layout`
+
+Related to `data-ad-layout`. Optional.
+
+### `layout-key`
+
+Related to `data-ad-layout-key`. Optional.
+
+### `format`
+
+Related to `data-ad-format`. Optional.
+
+### `responsive`
+
+Related to `data-ad-responsive`. Optional.
+
+### `className`
+
+Optional.
+
+### `style`
+
+Optional.
 
 # LICENSE
 
