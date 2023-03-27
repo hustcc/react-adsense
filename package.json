@@ -1,7 +1,7 @@
 {
   "name": "react-adsense",
   "version": "0.1.0",
-  "description": "A Simple React component for Google AdSense and Baidu advertisement.",
+  "description": "React components for Google AdSense",
   "main": "dist/react-adsense.js",
   "module": "dist/react-adsense.mjs",
   "typings": "dist/index.d.ts",
