@@ -2,3 +2,6 @@ package-lock.json
 node_modules/
 npm-debug.*
 .idea
+pnpm-lock.yaml
+dist
+build
